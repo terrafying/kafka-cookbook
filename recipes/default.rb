@@ -6,7 +6,7 @@
 #
 include_recipe 'selinux::disabled'
 
-package 'java-1.8.0-openjdk.aarch64'
+#package 'java-1.8.0-openjdk.aarch64'
 
 sysctl_param 'vm.swappiness' do
   value 0
