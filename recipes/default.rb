@@ -6,9 +6,7 @@
 #
 include_recipe 'selinux::disabled'
 
-node.default['java']['jdk_version'] = '8'
-node.default['java']['accept_license_agreement'] = true
-include_recipe 'java::default'
+package 'java-1.8.0-openjdk.aarch64'
 
 sysctl_param 'vm.swappiness' do
   value 0
