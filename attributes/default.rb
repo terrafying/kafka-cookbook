@@ -24,6 +24,7 @@ default['kafka-cluster']['config']['properties']['socket.receive.buffer.bytes'] 
 default['kafka-cluster']['config']['properties']['socket.request.max.bytes'] = 104_857_600
 default['kafka-cluster']['config']['properties']['socket.send.buffer.bytes'] = 1_048_576
 default['kafka-cluster']['config']['properties']['zookeeper.connection.timeout.ms'] = 1_000_000
+default['kafka-cluster']['config']['properties']['auto.leader.rebalance.enable'] = 'true'
 default['kafka-cluster']['config']['log4j']['customized'] = false
 default['kafka-cluster']['config']['log4j']['fileAppender'] = 'org.apache.log4j.RollingFileAppender'
 default['kafka-cluster']['config']['log4j']['maxFileSize'] = '50MB'
